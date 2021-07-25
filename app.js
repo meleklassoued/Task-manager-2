@@ -4,7 +4,9 @@ const connectDB = require("./db/connect");
 const app = express();
 const port = 5000;
 require("dotenv").config();
+//!midelware
 
+app.use(express.static("./public"));
 app.use(express.json());
 app.get("/", (req, res) => {
   res.send("Task manager app");
