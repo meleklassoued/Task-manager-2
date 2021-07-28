@@ -6,22 +6,28 @@ const {
   deleteTask,
 } = require("../Controllers/tasks");
 
-test("say getALLtask is good", () => {
-  expect(getAllTasks);
-});
 
-test("say createtask is good", () => {
-  expect(createTask);
-});
+describe("check the functionlty of the controllers:",()=>{
 
-test("get a single task", () => {
-  expect(getTask);
-});
+  test("say getALLtask is good", () => {
+    expect(getAllTasks);
+  });
+  
+  test("say createtask is good", () => {
+    expect(createTask);
+  });
+  
+  test("get a single task", () => {
+    expect(getTask);
+  });
+  
+  test("update task successfully", () => {
+    expect(updateTask);
+  });
+  
+  test("delete task successfully", () => {
+    expect(deleteTask);
+  });
+})
 
-test("update task successfully", () => {
-  expect(updateTask);
-});
 
-test("delete task successfully", () => {
-  expect(deleteTask);
-});
